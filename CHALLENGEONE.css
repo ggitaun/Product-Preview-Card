@@ -1,0 +1,157 @@
+body {
+    background: hsl(30, 38%, 92%);
+    width: 1440px; 
+   
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 480px;
+    border-radius: 8px;
+    background: white;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image{
+    height: 350px;
+    width: 220px;
+    display: inherit;
+    border-radius: 8px;
+    padding-right: 20px; 
+}
+
+.text {
+    width: 260px;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-bottom: 1.5px;
+    padding-top: 1.5px;
+    display: block;
+    justify-content: space-between;
+}
+
+.Top {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 1.5px;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700px;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 10px;
+}
+
+.par {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 2.5px;
+}
+
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5px;
+}
+
+.current {
+    font-weight: bold;
+    font-weight: 700;
+    margin-left: 3px;
+    margin-right: 30px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.previous {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+button  {
+   width: 220px;
+   height: 40px;
+   margin-top: 5px;
+   margin-left: 2px;
+   margin-right: auto;
+   margin-bottom: 20px;
+
+   font-weight: bold;
+   font-size: 12px;
+   font-family: 'Montserrat', sans-serif;
+   color: hsl(0, 0%, 100%);
+   padding-right: auto;
+   padding-left: auto;
+   display: inline;
+   
+   background: hsl(158, 36%, 37%);
+   border: 1px hsl(158, 36%, 37%) solid ;
+   border-radius: 8px ;
+}
+
+.icon {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+button:hover {
+    background-color: hsl(157, 21%, 17%);
+    cursor: pointer;
+}
+
+@media only screen and  (max-width:600px){
+    .container {
+        grid-template-columns: 1fr;
+        height: 730px;
+        width: 300px;
+        border-radius: 8px;
+        margin-top:30px;
+        margin-bottom: 30px;
+        }
+        body {
+        width: 100%;
+        }
+        .image {
+        padding: 0;
+        border-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+        object-fit: cover;
+        }
+}
+
+@media only screen and  (max-width:375px){
+    .container {
+        grid-template-columns: 1fr;
+        height: 730px;
+        width: 300px;
+        border-radius: 8px;
+        margin-top:30px;
+        margin-bottom: 30px;
+        }
+        body {
+        width: 100%;
+        }
+        .image {
+        padding: 0;
+        border-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        width: 100%;
+        object-fit: cover;
+        }
+}
